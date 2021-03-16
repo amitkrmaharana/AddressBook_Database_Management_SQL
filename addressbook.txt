@@ -42,4 +42,33 @@ mysql> select database();
 +--------------+
 1 row in set (0.00 sec)
 
+mysql> create table addressbook
+    -> (
+    -> id       int unsigned not null auto_increment,
+    -> first_name       varchar(150) not null,
+    -> last_name        varchar(150) not null,
+    -> address  varchar(250) not null,
+    -> city     varchar(150) not null,
+    -> state    varchar(150) not null,
+    -> zip      int not null,
+    -> phone_number     int not null,
+    -> email    varchar(150) not null,
+    -> primary key (id)
+    -> );
+Query OK, 0 rows affected (0.97 sec)
 
+mysql> describe addressbook;
++--------------+--------------+------+-----+---------+----------------+
+| Field        | Type         | Null | Key | Default | Extra          |
++--------------+--------------+------+-----+---------+----------------+
+| id           | int unsigned | NO   | PRI | NULL    | auto_increment |
+| first_name   | varchar(150) | NO   |     | NULL    |                |
+| last_name    | varchar(150) | NO   |     | NULL    |                |
+| address      | varchar(250) | NO   |     | NULL    |                |
+| city         | varchar(150) | NO   |     | NULL    |                |
+| state        | varchar(150) | NO   |     | NULL    |                |
+| zip          | int          | NO   |     | NULL    |                |
+| phone_number | int          | NO   |     | NULL    |                |
+| email        | varchar(150) | NO   |     | NULL    |                |
++--------------+--------------+------+-----+---------+----------------+
+9 rows in set (0.00 sec)
