@@ -123,3 +123,22 @@ e_number | email        |
 ---------+--------------+
 3 rows in set (0.03 sec)
 
+
+mysql> delete from addressbook where first_name='Aman';
+Query OK, 1 row affected (0.17 sec)
+
+mysql> select * from addressbook;
++----+------------+-----------+---------+------------+-----------+--------+-----
+---------+-------------+
+| id | first_name | last_name | address | city       | state     | zip    | phon
+e_number | email       |
++----+------------+-----------+---------+------------+-----------+--------+-----
+---------+-------------+
+|  4 | Amit       | Kumar     | k-type  | Jamshedpur | Jharkhand | 831004 |
+ 1258623 | abc@xyz.com |
+|  5 | Manish     | Singh     | P-type  | Jamshedpur | Karnataka | 123456 |
+ 8543912 | xyz@abc.com |
++----+------------+-----------+---------+------------+-----------+--------+-----
+---------+-------------+
+2 rows in set (0.02 sec)
+
