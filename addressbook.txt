@@ -165,3 +165,19 @@ mysql> select count(city),count(state) from addressbook;
 +-------------+--------------+
 1 row in set (0.04 sec)
 
+
+mysql> select * from addressbook where city='Jamshedpur' order by first_name;
++----+------------+-----------+---------+------------+-----------+--------+-----
+---------+-------------+
+| id | first_name | last_name | address | city       | state     | zip    | phon
+e_number | email       |
++----+------------+-----------+---------+------------+-----------+--------+-----
+---------+-------------+
+|  4 | Amit       | Kumar     | k-type  | Jamshedpur | Jharkhand | 831004 |
+ 1258623 | abc@xyz.com |
+|  5 | Manish     | Singh     | P-type  | Jamshedpur | Karnataka | 123456 |
+ 8543912 | xyz@abc.com |
++----+------------+-----------+---------+------------+-----------+--------+-----
+---------+-------------+
+2 rows in set (0.00 sec)
+
